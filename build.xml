@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
-<project name="Javascript compress project" basedir="/Users/tang3w/Workspace/Repository/wxgames/Stick" default="compile">
+<project name="Javascript compress project" basedir="/Users/larkin/liuliuCode/Games/Stick" default="compile">
 
     <taskdef name="jscomp" classname="com.google.javascript.jscomp.ant.CompileTask"
-             classpath="/Users/tang3w/cocos2d-js-v3.1/tools/cocos2d-console/bin/../plugins/project_compile/build_web/bin/compiler-1.6.jar"/>
+             classpath="/Users/larkin/cocos2d/cocos2d-x-3.3rc0/tools/cocos2d-console/bin/../plugins/project_compile/build_web/bin/compiler-1.6.jar"/>
 
     <target name="compile">
         <jscomp compilationLevel="simple" 
                 warning="quiet"
                 debug="false" 
-                output="/Users/tang3w/Workspace/Repository/wxgames/Stick/publish/html5/game.min.js"
+                output="/Users/larkin/liuliuCode/Games/Stick/publish/html5/game.min.js"
                 languagein="ECMASCRIPT5"
                 
                 >
-            <sources dir="/Users/tang3w/Workspace/Repository/wxgames/Stick/frameworks/cocos2d-html5">
+            <sources dir="/Users/larkin/liuliuCode/Games/Stick/frameworks/cocos2d-html5">
                 <file name="CCBoot.js"/>
                 <file name="CCDebugger.js"/>
                 <file name="cocos2d/core/utils/BinaryLoader.js"/>
