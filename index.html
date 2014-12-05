@@ -31,13 +31,25 @@
             display: block;
             top: -999px;
         }
+
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 700px),
+        only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 700px),
+        only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 700px),
+        only screen and (        min-device-pixel-ratio: 2)      and (min-width: 700px),
+        only screen and (                min-resolution: 192dpi) and (min-width: 700px),
+        only screen and (                min-resolution: 2dppx)  and (min-width: 700px) {
+            #ad {
+                height: 100px;
+            }
+        }
     </style>
 </head>
 <body style="padding:0; margin: 0; background: #000;">
 <canvas id="gameCanvas" width="800" height="450"></canvas>
 
 <div id="ad">
-  <iframe src="http://llsite.qiniudn.com/ad/index.html" frameborder="0" scrolling="no" height="65" width="100%"></iframe>
+  <iframe src="http://llsite.qiniudn.com/ad/index.html" frameborder="0" scrolling="no" height="100%" width="100%"></iframe>
 </div>
 
 <img id="guide" width="100%" alt="分享到朋友圈吧" src="/res/arrow.png">
