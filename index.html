@@ -22,7 +22,7 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-            height: 65px;
+            height: 2cm;
             background: #000000;
         }
 
@@ -30,18 +30,6 @@
             position: fixed;
             display: block;
             top: -999px;
-        }
-
-        @media
-        only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 700px),
-        only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 700px),
-        only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 700px),
-        only screen and (        min-device-pixel-ratio: 2)      and (min-width: 700px),
-        only screen and (                min-resolution: 192dpi) and (min-width: 700px),
-        only screen and (                min-resolution: 2dppx)  and (min-width: 700px) {
-            #ad {
-                height: 100px;
-            }
         }
     </style>
 </head>
@@ -62,9 +50,9 @@
 
 <script>
     var title = "神经喵逃出疯人院";
+
     function Share(shareScore){
         window.wxData.desc = '史上最虐心游戏“' + title + '”我走了' + shareScore + '步，来挑战我吧！！！'; //分享标题
-        //moduleAd.share();
     }
 
     window.wxData = {
